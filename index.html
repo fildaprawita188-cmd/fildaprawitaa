@@ -3,34 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>hi i am FILDA PRAWITA</title>
+    <title>Address Book</title>
+    <script src="https://cdn.jsdelivr .net/npm/@tailwindcss/browser@4"></script>
 </head>
-<header>
-    
-    <nav>
-        <ol>
-    <1i><a href="">about me</a></1i>
+<body>
+    <main> </main>
+    <h1 class="text-3xl">Address Book</h1>
 
-    <1i><a href="">education</a></1i>
+    <div class="grid-cols-2">
+        <form class="ms-5 mt-5 space-y-2" id="formContacts">
+            <div class="grid grid-cols-2 w-fit">
+                <label for="fullName">Fullname</label>
+                <input
+                class="border"
+                type="text"
+                name="fullName"
+                id="fullName"
+                required
+                />
+            </div>
 
-    <1i><a href="">personal skill</a></1i>
+            <div class="grid grid-cols-2 w-fit">
+                <label for="phone">Phone Number</label>
+                <input
+                class="border"
+                type="number"
+                name="phone"
+                id="phone"
+                required
+                />
+            </div>
 
-    <1i><a href="">contact me</a></1i>
-        </ol>
-    </nav>
-</header>
+            <div class="grid grid-cols-2 w-fit">
+                <label for="email">Email</label>
+                <input
+                class="border"
+                type="email"
+                name="email"
+                id="email"
+                required
+                />
+            </div>
 
-<main>
-    <div>
-        <h2>hi i am FILDA PRAWITA</h2>
-        <p>
-            and this is my PORTOFOLIO
-        </p>
+            <div class="grid grid-cols-2 w-fit">
+                <label for="location"></label>location</label>
+                <input
+                class="border"
+                type="text"
+                name="location"
+                id="location"
+                required
+                />
+                </div>
+
+                <button class="border bg-black text-white rounded-md px-3 py-1">
+                Submit
+                </button>
+        </form>
+        <ul id="contact-list">
+            <!-- Contacts will be dynamically inserted here -->
+        </ul>
     </div>
+</main>
 
-    <div>
-        <img src="assets/Rectangle 2.png" alt="" />
-    </div>
-    </main>  
+    <script src="script/script.js"></script>
 </body>
 </html>
